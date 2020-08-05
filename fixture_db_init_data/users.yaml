@@ -1,0 +1,8 @@
+- model: auth.user
+  pk: -1
+  fields:
+    username: ChessBot
+    first_name: Chess
+    last_name: Bot
+    
+# TODO - add super user in app

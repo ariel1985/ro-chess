@@ -1,0 +1,7 @@
+0000000000000000000000000000000000000000 c6391c517dac088e8ca12a3a437b573240582a87 ariel1985 <arielrotem85@gmail.com> 1590751431 +0300	commit (initial): initial commit
+c6391c517dac088e8ca12a3a437b573240582a87 49222b578815e26e23d2d2b3eed2f1dd3e3a22a3 ariel1985 <arielrotem85@gmail.com> 1591610463 +0300	commit: Update api folder name and set up new settings for environments
+49222b578815e26e23d2d2b3eed2f1dd3e3a22a3 c3c1dd2d59c23f79a7e88c268227e302d749ad7d ariel1985 <arielrotem85@gmail.com> 1591616393 +0300	commit: settings and api
+c3c1dd2d59c23f79a7e88c268227e302d749ad7d 5b99f7d85fc5df10785838b984583a5516c8f976 ariel1985 <arielrotem85@gmail.com> 1591617342 +0300	commit: settings is production by default
+5b99f7d85fc5df10785838b984583a5516c8f976 6ac9c60734623524571fc78ed65144f9897752a5 ariel1985 <arielrotem85@gmail.com> 1591718322 +0300	commit: split settings to envs
+6ac9c60734623524571fc78ed65144f9897752a5 bc3a6b2c246d82ad9f19889b8dc9e2c0b672367b ariel1985 <arielrotem85@gmail.com> 1596629633 +0300	commit: working version (not tested)
+bc3a6b2c246d82ad9f19889b8dc9e2c0b672367b c86c5b709edc41681870a64be4b4928586712ea1 ariel1985 <arielrotem85@gmail.com> 1596629782 +0300	commit: adding readme file
