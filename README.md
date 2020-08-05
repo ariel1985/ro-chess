@@ -9,10 +9,14 @@ Server side AI based chess game.
 
 # Install & Set Up
 - Set up virtual environment
+
 - Clone it from the Git, 
 - Install the project dependencies,
  
 ```bash
+pip install virtualenv
+virtualenv venv
+souce venv/bin/activate
 pip install requirements.txt 
 ``` 
 
