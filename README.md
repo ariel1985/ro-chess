@@ -35,6 +35,8 @@ export DJANGO_SETTINGS_MODULE=django_chess.settings.production
 
 ## Run 
 ```bash
+python manage.py makemigrations
+python manage.py migrate
 python manage.py runserver
 ```
  
