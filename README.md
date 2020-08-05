@@ -7,7 +7,7 @@ Github link to push
 Server side AI based chess game.
 
 
-#Install & Set Up
+# Install & Set Up
 - Set up virtual environment
 - Clone it from the Git, 
 - Install the project dependencies,
