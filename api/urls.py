@@ -10,7 +10,7 @@ from .views import UserList, current_user
 router = routers.DefaultRouter()
 router.register(r'users', views.UserViewSet)
 router.register(r'groups', views.GroupViewSet)
-router.register(r'games', views.GameViewSet)
+# router.register(r'games', views.GameViewSet)
 # router.register(r'^rotem/(?P<pk>[0-9]+)$', views.RotemTestAPI)
 # router.register(r'rotem', RotemTestAPI.as_view())
 

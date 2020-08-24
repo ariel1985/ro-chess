@@ -4,6 +4,7 @@ GENERAL DJANGO CONFIG
 Django settings for django_chess project.
 """
 import os
+# import utils
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -42,9 +43,9 @@ REST_FRAMEWORK = {
     )
 }
 
-JWT_AUTH = {
-    'JWT_RESPONSE_PAYLOAD_HANDLER': 'django_chess.utils.my_jwt_response_handler'
-}
+# JWT_AUTH = {
+#     'JWT_RESPONSE_PAYLOAD_HANDLER': 'django_chess.utils.my_jwt_response_handler'
+# }
 
 MIDDLEWARE_CLASSES = [
     'corsheaders.middleware.CorsMiddleware',  # (order matters for CORS)
@@ -81,8 +82,6 @@ CORS_ALLOW_HEADERS = (
     'x-csrftoken',
     'x-requested-with',
 )
-
-
 
 ROOT_URLCONF = 'django_chess.urls'
 

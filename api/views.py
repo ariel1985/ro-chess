@@ -4,7 +4,7 @@ from rest_framework import permissions, status
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework.decorators import api_view
-from api.serializers import UserSerializer, GroupSerializer, ChessGameSerializer, UserSerializerWithToken
+from api.serializers import UserSerializer, GroupSerializer, UserSerializerWithToken  # , ChessGameSerializer
 from chess_engine.models import *
 
 
@@ -52,14 +52,13 @@ class GroupViewSet(viewsets.ModelViewSet):
     permission_classes = [permissions.IsAuthenticated]
 
 
-
-class GameViewSet(viewsets.ModelViewSet):
-    """
-    API endpoint that allows game to be viewed or edited.
-    """
-    queryset = GamePersistentData.objects.all()
-    serializer_class = ChessGameSerializer
-    permission_classes = [permissions.IsAuthenticated]
+# class GameViewSet(viewsets.ModelViewSet):
+#     """
+#     API endpoint that allows game to be viewed or edited.
+#     """
+#     queryset = GamePersistentData.objects.all()
+#     serializer_class = ChessGameSerializer
+#     permission_classes = [permissions.IsAuthenticated]
     
 #
 # class RotemTestAPI(APIView):

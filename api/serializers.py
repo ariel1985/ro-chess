@@ -1,6 +1,6 @@
 from django.contrib.auth.models import User, Group
-from rest_framework import serializers
 # from chess_engine.models import GamePersistentData
+from rest_framework import serializers
 from rest_framework_jwt.settings import api_settings
 
 
@@ -47,7 +47,7 @@ class GroupSerializer(serializers.HyperlinkedModelSerializer):
 #     class Meta:
 #         model = GamePersistentData
 #         fields = ['id', 'data']
-#
+
 # class RotemSerializer():
 #     class Meta:
 #         model = 'GamePersistentData'
