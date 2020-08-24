@@ -26,12 +26,24 @@ INSTALLED_APPS = [
     'corsheaders'
 ]
 
+AUTH_USER_MODEL = 'auth.User'
 REST_FRAMEWORK = {
     # Use Django's standard `django.contrib.auth` permissions,
     # or allow read-only access for unauthenticated users.
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
-    ]
+    ],
+    'DEFAULT_PERMISSION_CLASSES': [
+         'rest_framework.permissions.IsAuthenticated',
+         'rest_framework.permissions.IsAdminUser',
+    ],
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
+    )
+}
+
+JWT_AUTH = {
+    'JWT_RESPONSE_PAYLOAD_HANDLER': 'django_chess.utils.my_jwt_response_handler'
 }
 
 MIDDLEWARE_CLASSES = [

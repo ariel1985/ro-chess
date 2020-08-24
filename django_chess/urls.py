@@ -21,21 +21,22 @@ from django.conf.urls.static import static
 from forms import AuthForm
 from chess_engine.views import *
 from views import *
+from rest_framework_jwt.views import obtain_jwt_token
+
 
 # PARENT URLS
 urlpatterns = [
     url(r'^api/', include('api.urls')),
+    url(r'^token-auth/', obtain_jwt_token),
     url(r'', include('chess_engine.urls')),
     url(r'^admin/', admin.site.urls),
-    url(r'^login/$', views.login, {'template_name': 'chess_engine/login.html', 'authentication_form': AuthForm},
-        name="login"),
+    url(r'^login/$', views.login, {'template_name': 'chess_engine/login.html', 'authentication_form': AuthForm}, name="login"),
     url(r'^register/$', RegisterView.as_view(), name="register"),
     url(r'^profile/(?P<pk>[0-9]+)$', ProfileView.as_view(), name='profile'),
     url(r'^profile/(?P<pk>[0-9]+)/update_password$', ProfileUpdatePasswordView.as_view(), name='update-password'),
     url(r'^profile/(?P<pk>[0-9]+)/history/(?P<type>[a-z]+)$', ProfileShowRankingHistoryView.as_view(), name='show-history'),
     url(r'^profile/(?P<pk>[0-9]+)/load_data$', ProfileLoadData.as_view(), name='profile-load-data'),
-    url(r'^profile/(?P<pk>[0-9]+)/(?P<update_type>[a-z]+)/(?P<key>[a-zA-Z0-9_]+)/(?P<value>[a-zA-Z0-9_ -]+)$',
-        ProfileUpdateKeyView.as_view(), name='profile-update-key'),
+    url(r'^profile/(?P<pk>[0-9]+)/(?P<update_type>[a-z]+)/(?P<key>[a-zA-Z0-9_]+)/(?P<value>[a-zA-Z0-9_ -]+)$', ProfileUpdateKeyView.as_view(), name='profile-update-key'),
     url(r'^logout/$', views.logout, {'next_page': '/login'}, name='logout'),
     url(r'^documentation/$', DocumentationView.as_view(), name='documentation')
 ]

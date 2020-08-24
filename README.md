@@ -1,3 +1,7 @@
+JWT Authentication
+  - [JWT django react auth Tutorial](https://medium.com/@dakota.lillie/django-react-jwt-authentication-5015ee00ef9a)
+  - [JWT django react auth video](https://www.youtube.com/watch?v=0fb7zvUovPQ)
+
 # About
 Server side AI based chess game.
 
