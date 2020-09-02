@@ -43,9 +43,9 @@ REST_FRAMEWORK = {
     )
 }
 
-# JWT_AUTH = {
-#     'JWT_RESPONSE_PAYLOAD_HANDLER': 'django_chess.utils.my_jwt_response_handler'
-# }
+JWT_AUTH = {
+    'JWT_RESPONSE_PAYLOAD_HANDLER': 'utils.utils.my_jwt_response_handler'
+}
 
 MIDDLEWARE_CLASSES = [
     'corsheaders.middleware.CorsMiddleware',  # (order matters for CORS)

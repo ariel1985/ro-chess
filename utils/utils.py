@@ -1,16 +1,23 @@
-# from api.serializers import UserSerializer
+from api.serializers import UserSerializer
 
 
-# def my_jwt_response_handler(token, user=None, request=None):
-#     """
-#     Custom response payload handler.
-#     This function controls the custom payload after login or token refresh.
-#     This data is returned through the web API.
-#     """
-#     return {
-#         'token': token,
-#         'user': UserSerializer(user, context={'request': request}).data
-#     }
+def my_jwt_response_handler(token, user=None, request=None):
+    """
+    Custom response payload handler.
+    This function controls the custom payload after login or token refresh.
+    This data is returned through the web API.
+    """
+    
+    json = {
+        'token': token,
+        'user': UserSerializer(user, context={'request': request}).data
+    }
+    result = json
+    with open('output.log', 'w') as f:
+        for r in result:
+            f.write(str(r) + '/n')
+        print "--- The log:", result
+    return json
 
 
 def access(container, path, value=None):

@@ -2,7 +2,7 @@
 from django.template import loader
 
 from chess_engine.chess_classes import ChessPiece
-from chess_engine.models import GamePersistentData, UserColorSet
+from chess_engine.models import UserColorSet  # ,GamePersistentData
 from utils import utils
 
 

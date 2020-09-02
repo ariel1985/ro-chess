@@ -3,7 +3,7 @@ JWT Authentication
   - [JWT django react auth video](https://www.youtube.com/watch?v=0fb7zvUovPQ)
 
 # About
-Server side AI based chess game.
+Server side AI based chess game. Client [_](https://github.com/ariel1985/chess-client)
 
 # Install & Set Up
 
