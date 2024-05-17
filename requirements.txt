@@ -6,11 +6,10 @@ djangorestframework==3.2.0
 gunicorn==19.10.0
 json2html==1.2.1
 psycopg2==2.8.5
-PyJWT==1.7.1
 python-decouple==3.3
 pytz==2020.1
 PyYAML==3.11
 sqlparse==0.3.1
 whitenoise==3.2.2
-
+pyjwt>=2.4.0
 djangorestframework-jwt~=1.11.0
